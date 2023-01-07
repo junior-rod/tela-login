@@ -31,6 +31,8 @@ section#login{
     overflow: hidden;
     /*Tudo que está fora da borda, fica escondido*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width 0.2s, height 0.2s; /*Animacao*/
+    transition-timing-function: ease; /*suaviza animacao*/
 }
 section#login > div#imagem{
     display: block;
