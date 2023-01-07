@@ -52,5 +52,47 @@ div#formulario > h1{
 }
 div#formulario > p{
     font-size: 0.8em;
-    text-align: justify;
+}
+form > div.campo{
+    background-color: var(--lilas);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+form > input[type=submit]{ /*Formatação do botão 'entrar'*/
+    display: block;
+    font-size: 1em;
+    width: 100%; /*não pode ser 100vw pq 100vw é a tela toda, já 100% é 100% da section */
+    height: 40px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+form > input[type=submit]:hover{
+    background-color: #285857;
+    cursor: pointer; /*Troca o icone do mouse*/
+}
+form > a.botao{
+    display: block;
+    font-size: 1em;
+    text-decoration: none;
+    color: #285857;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #285857;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+form > a.botao:hover{
+    background-color: #285857;
+    color: white;
+}
+form > a.botao > span{
+    font-size: 0.8em;
 }
