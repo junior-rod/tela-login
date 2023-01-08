@@ -55,11 +55,31 @@ div#formulario > p{
 }
 form > div.campo{
     background-color: var(--lilas);
+    border: 2px solid #5f2c82;
     width: 100%;
     display: block;
     height: 40px;
     border-radius: 5px;
     margin: 5px 0px;
+}
+div.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #55b6b4;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px); /*transform sempre devem ser feitas por último. SEMPRE.*/
+}
+div.campo > input:focus-within{ /*Para quando tiver digitando*/
+    background-color: white;
 }
 form > input[type=submit]{ /*Formatação do botão 'entrar'*/
     display: block;
